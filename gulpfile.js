@@ -4,16 +4,8 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
 var connect = require('gulp-connect');
+var jshint = require('gulp-jshint');
 var pkg = require('./package.json');
-
-// Set the banner content
-var banner = ['/*!\n',
-    ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
-    ' * Copyright 2013-' + (new Date()).getFullYear(), ' <%= pkg.author %>\n',
-    ' * Licensed under <%= pkg.license.type %> (<%= pkg.license.url %>)\n',
-    ' */\n',
-    ''
-].join('');
 
 // Minify compiled CSS
 gulp.task('minify-css', function() {
@@ -30,6 +22,12 @@ gulp.task('minify-js', function() {
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('js'))
+});
+
+gulp.task('jshint', function() {
+  return gulp.src('js/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-stylish'));
 });
 
 // Copy vendor libraries from /node_modules into /vendor
@@ -70,11 +68,12 @@ gulp.task('reload', function () {
 });
  
 gulp.task('watch', function () {
-  gulp.watch(['./*.html', './css/*', './js/*', './img/*', './fonts/*'], ['reload', 'watch']);
+  gulp.watch(['./*.html', './css/*', './img/*', './fonts/*'], ['reload']);
+  gulp.watch(['./js/*'], ['jshint', 'reload']);
 });
  
 // For development
 gulp.task('default', ['copy', 'connect', 'watch']);
 
 // When ready to deploy
-gulp.task('package', ['minify-css', 'minify-js', 'copy'])
+gulp.task('package', ['jshint', 'minify-css', 'minify-js', 'copy'])
