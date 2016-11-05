@@ -548,19 +548,28 @@ h2.page-heading{
   font-weight: bold;
   font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: left;
+  padding-bottom: 30px;
 }
 
 p.team{
   text-align: left;
   padding-top: 20%;
-  padding-bottom: 20%;
   padding-left: 10%;
   font-size: 2em;
   max-width: 90%;
+  font-weight: bold;
+
 }
 
 div.profile{
-  border-width: 1px;
+  border-width: 3px;
   border-style: solid;
-  border-color: #000;
+  border-color: #171717;
+}
+
+div.profile2{
+  border-width: 3px;
+  border-style: solid;
+  border-color: #171717;
+  background-color: #171717;
 }
