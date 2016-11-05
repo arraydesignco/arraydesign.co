@@ -555,7 +555,7 @@ p.team{
   text-align: left;
   padding-top: 20%;
   padding-left: 10%;
-  font-size: 2em;
+  font-size: 3em;
   max-width: 90%;
   font-weight: bold;
 
@@ -565,6 +565,7 @@ div.profile{
   border-width: 3px;
   border-style: solid;
   border-color: #171717;
+  padding: 30px;
 }
 
 div.profile2{
@@ -572,6 +573,8 @@ div.profile2{
   border-style: solid;
   border-color: #171717;
   background-color: #171717;
+  padding: 30px;
+
 }
 
 p.lauren{
