@@ -33,7 +33,8 @@ h6 {
   font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 p {
-  font-size: 16px;
+  font-size: 18px;
+  font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -538,4 +539,28 @@ h2.section-heading{
 .home-heading-desc {
   font-weight: 700;
 
+}
+
+/*Team Page*/
+h2.page-heading{
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: left;
+}
+
+p.team{
+  text-align: left;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 10%;
+  font-size: 2em;
+  max-width: 90%;
+}
+
+div.profile{
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000;
 }
