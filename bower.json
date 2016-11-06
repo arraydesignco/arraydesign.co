@@ -1,0 +1,21 @@
+{
+  "name": "arraydesign.co",
+  "description": "Website for Array Design",
+  "main": "index.html",
+  "authors": [
+    "Ben Inada <me@beninada.com> Lauren Wong <laurenwong12@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "http://arraydesign.co",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "parallax.js": "^1.4.2"
+  }
+}
