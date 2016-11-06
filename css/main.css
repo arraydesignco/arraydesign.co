@@ -111,7 +111,7 @@ ul {
 
 .navbar-default {
   background-color: #fff;
-  border-color: rgba(34, 34, 34, 0.05);
+  border-color: #222;
   font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -167,7 +167,7 @@ ul {
     color: #fff; }
   .navbar-default.affix {
     background-color: #fff;
-    border-color: rgba(34, 34, 34, 0.05); }
+    border-color: #222; }
   .navbar-default.affix .navbar-header .navbar-brand {
     color: #222;
     font-size: 14px; }
@@ -179,7 +179,7 @@ ul {
     color: #222; }
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #F05F40; } }
+    color: #e84b3a; } }
 
 header {
   position: relative;
@@ -323,7 +323,6 @@ header {
 
 .service-box .service-content p {
   font-size: 1em;
-  color: #b1b1b1;
   margin: 0; }
 
 .service-box:hover .service-icon {
@@ -372,8 +371,7 @@ header {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #222;
-  background-color: #f2f2f2;
-  border-color: #ededed; }
+  background-color: #ededed; }
 
 .btn-default:active,
 .btn-default.active,
@@ -408,7 +406,6 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: #fff;
   background-color: #222;
-  border-color: #F05F40;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s; }
@@ -420,8 +417,7 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #474747;
-  border-color: #ed431f; }
+  background-color: #474747; }
 
 .btn-primary:active,
 .btn-primary.active,
@@ -446,11 +442,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #F05F40;
-  border-color: #F05F40; }
+  background-color: #e84b3a;
+  border-color: #e84b3a; }
 
 .btn-primary .badge {
-  color: #F05F40;
+  color: #e84b3a;
   background-color: #fff; }
 
 .btn {

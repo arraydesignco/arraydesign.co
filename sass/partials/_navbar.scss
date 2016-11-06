@@ -1,6 +1,6 @@
 .navbar-default {
   background-color: $white;
-  border-color: rgba(34, 34, 34, 0.05);
+  border-color: $black;
   font-family: $sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -72,7 +72,7 @@
 
   .navbar-default.affix {
     background-color: $white;
-    border-color: rgba(34, 34, 34, 0.05);
+    border-color: $black;
   }
 
   .navbar-default.affix .navbar-header .navbar-brand {
@@ -92,6 +92,6 @@
 
   .navbar-default.affix .nav > li > a:hover,
   .navbar-default.affix .nav > li > a:focus:hover {
-    color: #F05F40;
+    color: $red;
   }
 }

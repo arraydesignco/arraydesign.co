@@ -14,8 +14,7 @@
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: $black;
-  background-color: #f2f2f2;
-  border-color: #ededed;
+  background-color: $off-white;
 }
 
 .btn-default:active,
@@ -54,7 +53,6 @@ fieldset[disabled] .btn-default.active {
 .btn-primary {
   color: $white;
   background-color: $black;
-  border-color: #F05F40;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
@@ -68,7 +66,6 @@ fieldset[disabled] .btn-default.active {
 .open > .dropdown-toggle.btn-primary {
   color: $white;
   background-color: $grey;
-  border-color: #ed431f;
 }
 
 .btn-primary:active,
@@ -95,12 +92,12 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: $red;
+  border-color: $red;
 }
 
 .btn-primary .badge {
-  color: #F05F40;
+  color: $red;
   background-color: $white;
 }
 
