@@ -7,9 +7,9 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../img/dream-show.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/dream-show.jpg');
   text-align: center;
-  color: white;
+  color: $white;
 
   .header-content {
     position: relative;
@@ -32,7 +32,6 @@ header {
 
   .header-content .header-content-inner p {
     font-weight: 700;
-    /*color: rgba(255, 255, 255, 0.7);*/
     font-size: 50px;
     margin-bottom: 50px;
   }
@@ -70,17 +69,15 @@ header {
   }
 }
 
-h1.intro {
-  font-size: 4em;
+.intro {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-h2.section-heading {
-  font-size: 4em;
+.section-heading {
   text-transform: uppercase;
-  font-weight: bold;
-  font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-family: $sans-serif;
   text-align: center;
 }
 
@@ -89,7 +86,7 @@ h2.section-heading {
 }
 
 .home-heading {
-  font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: $sans-serif;
   font-weight: 700;
   font-size: 5em;
   text-transform: uppercase;
