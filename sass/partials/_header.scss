@@ -2,12 +2,13 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/dream-show.jpg');
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // background-size: cover;
+  // -o-background-size: cover;
+  // background-position: center;
+  // background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/dream-show.jpg');
+  background: transparent;
   text-align: center;
   color: $white;
 

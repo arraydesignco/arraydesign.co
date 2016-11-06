@@ -61,4 +61,7 @@
         }
     });
 
+    // Initialize parallax
+    $('.parallax-window').parallax({imageSrc: '../img/dream-show.jpg'});
+
 })(jQuery); // End of use strict
