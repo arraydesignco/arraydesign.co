@@ -1,6 +1,6 @@
 .navbar-default {
   background-color: $white;
-  border-color: $black;
+  border-color: transparent;
   font-family: $sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -72,7 +72,7 @@
 
   .navbar-default.affix {
     background-color: $white;
-    border-color: $black;
+    border-color: transparent;
   }
 
   .navbar-default.affix .navbar-header .navbar-brand {

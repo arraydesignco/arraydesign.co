@@ -111,7 +111,7 @@ ul {
 
 .navbar-default {
   background-color: #fff;
-  border-color: #222;
+  border-color: transparent;
   font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -167,7 +167,7 @@ ul {
     color: #fff; }
   .navbar-default.affix {
     background-color: #fff;
-    border-color: #222; }
+    border-color: transparent; }
   .navbar-default.affix .navbar-header .navbar-brand {
     color: #222;
     font-size: 14px; }
