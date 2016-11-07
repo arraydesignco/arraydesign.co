@@ -247,6 +247,12 @@ header {
   font-size: 5em;
   text-transform: uppercase; }
 
+#intro {
+  padding-top: 0;
+  padding-bottom: 0; }
+  #intro .artist > .how {
+    margin-top: 150px; }
+
 @media (min-width: 992px) {
   .service-box {
     margin: 20px auto 0; } }
