@@ -62,6 +62,13 @@
     });
 
     // Initialize parallax
-    $('header').parallax({imageSrc: '../img/dream-show.jpg'});
+    $('#header').parallax({imageSrc: '../img/dream-show.jpg'});
     $('#hook').parallax({imageSrc: '../img/growth.jpg'});
 })(jQuery); // End of use strict
+
+$(function() {
+    $('.scroll-down').click(function() {
+        $('html, body').animate({scrollTop: $('#intro').offset().top }, 'slow');
+        return false;
+    });
+});
