@@ -19,7 +19,7 @@ h1,
 h2,
 h3,
 h4 {
-  margin: 1.414em 0 0.5em;
+  margin: 0 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
   font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -238,20 +238,26 @@ header {
   font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center; }
 
-.home-heading-desc {
-  font-weight: 700; }
-
 .home-heading {
   font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  font-size: 5em;
-  text-transform: uppercase; }
+  font-weight: 700; }
+
+.home-heading-desc {
+  font-weight: 400;
+  margin-top: .5em;
+  margin-bottom: 2em; }
 
 #intro {
   padding-top: 0;
   padding-bottom: 0; }
   #intro .artist > .how {
     margin-top: 150px; }
+
+#hook {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  background: transparent;
+  color: #fff; }
 
 @media (min-width: 992px) {
   .service-box {

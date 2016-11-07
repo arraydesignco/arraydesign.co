@@ -2,12 +2,6 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // background-size: cover;
-  // -o-background-size: cover;
-  // background-position: center;
-  // background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/dream-show.jpg');
   background: transparent;
   text-align: center;
   color: $white;
@@ -82,13 +76,13 @@ header {
   text-align: center;
 }
 
-.home-heading-desc {
-  font-weight: 700;
-}
-
 .home-heading {
   font-family: $sans-serif;
   font-weight: 700;
-  font-size: 5em;
-  text-transform: uppercase;
+}
+
+.home-heading-desc {
+  font-weight: 400;
+  margin-top: .5em;
+  margin-bottom: 2em;
 }
