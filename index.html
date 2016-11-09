@@ -55,6 +55,7 @@
 
 <body>
 
+    <!-- ####################################### NAVIGATION ####################################### -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -65,32 +66,27 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#services">OUR SERVICES</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="team.html">TEAM</a>
-                    </li>
-
-                    <li>
-                        <a class="page-scroll" href="#contact">CONTACT</a>
-                    </li>
+                    <li><a class="page-scroll" href="#services">OUR SERVICES</a></li>
+                    <li><a class="page-scroll" href="team.html">TEAM</a></li>
+                    <li><a class="page-scroll" href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- ####################################### HEADER ####################################### -->
     <header id="header" class="parallax-window" data-parallax="scroll" data-img-src="img/dream-show.jpg">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 class="home-heading">THAT DREAM SHOW IS CLOSER THAN YOU THINK.</h1>
                 <h4 class="home-heading-desc">We'll help you get there by amplifying your web presence.</h4>
-                <a href="#services" class="btn btn-primary btn-xl page-scroll">JAM WITH US</a>
+                <a href="#contact" class="btn-gradient page-scroll"><span>JAM WITH US</span></a>
             </div>
         </div>
         <a href="#" class="scroll-down" address="true"></a>
     </header>
 
+    <!-- ####################################### INTRO ####################################### -->
     <section class="bg-light" id="intro">
         <div class="container">
             <div class="artist row">
@@ -120,6 +116,7 @@
         </div>
     </section>
 
+    <!-- ####################################### HOOK ####################################### -->
     <section class="parallax-window" data-parallax="scroll" data-img-src="img/dream-show.jpg" id="hook">
         <div class="container">
             <div class="row">
@@ -133,6 +130,8 @@
         </div>
     </section>
 
+
+    <!-- ####################################### SERVICES ####################################### -->
     <section class="bg-light" id="services">
         <div class="container">
             <div class="row">
@@ -205,6 +204,7 @@
         </div>
     </section>
 
+    <!-- ####################################### CONTACT ####################################### -->
     <section class="parallax-window" data-parallax="scroll" data-img-src="img/phone.jpg" id="contact">
         <div class="container">
             <div class="row">
@@ -218,42 +218,44 @@
                     <form action="https://formspree.io/hello@arraydesign.co"
                           method="POST">
                         <div class="group">      
-                            <input type="text" name="name" required>
+                            <input type="text" name="Name" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Name</label>
                         </div>
                         <div class="group">      
-                            <input type="email" name="_replyto" required>
+                            <input type="email" name="Email Address" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>Email Address</label>
                         </div>
                         <div class="group">      
-                            <input type="text" name="who" required>
+                            <input type="text" name="Who are you? (e.g. DJ, songwriter, saxophonist)" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
-                            <label>Who are you? (e.g. DJ, songwriter, saxophonist):</label>
+                            <label>Who are you? (e.g. DJ, songwriter, saxophonist)</label>
                         </div>
                         <div class="group">      
-                            <input type="text" name="genre" required>
+                            <input type="text" name="What genre(s) of music do you make?" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>What genre(s) of music do you make?</label>
                         </div>
                         <div class="group">      
-                            <input type="text" name="commitment" required>
+                            <input type="text" name="How big of a commitment is music to you in your life?" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label>How big of a commitment is music to you in your life?</label>
                         </div>
-                        <button class="btn btn-default btn-lg" type="submit" value="Send">LET'S JAM</button>
+                            <p>We'll be in touch within 1 business day by email.</p>
+                            <a class="btn-gradient cta" type="submit" value="Send"><span>LET'S JAM</span></a>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ####################################### FOOTER ####################################### -->
     <footer class="bg-dark">
         <div class="container">
             <img src="img/soundcloud.png" alt="frequency art" width="1200">
