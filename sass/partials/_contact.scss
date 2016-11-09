@@ -1,4 +1,23 @@
 #contact {
+  .btn-gradient {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    
+    &:after {
+      height: 50px;
+      width: 200%;
+      transform: translateX(-40%);
+    }
+  
+    &:hover {
+      &:after {
+        transform: translateX(-60%);
+      }
+    }
+  }
+
   .contact-form {
     border: 2px solid $black;
     padding: 50px;

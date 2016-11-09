@@ -24,6 +24,7 @@
     "jshint": "^2.9.4",
     "jshint-stylish": "^2.2.1",
     "magnific-popup": "^1.1.0",
+    "run-sequence": "^1.2.2",
     "scrollreveal": "^3.3.2"
   },
   "author": "",

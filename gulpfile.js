@@ -8,6 +8,9 @@ var uglify = require('gulp-uglify');
 var connect = require('gulp-connect');
 var jshint = require('gulp-jshint');
 var sass = require('gulp-sass');
+var runSequence = require('run-sequence');
+var del = require('del');
+var fs = require('fs');
 var pkg = require('./package.json');
 
 // Minify compiled CSS
@@ -84,12 +87,20 @@ gulp.task('reload', function () {
  
 gulp.task('watch', function () {
   gulp.watch(['./*.html', './img/*', './fonts/*'], ['reload']);
-  gulp.watch(['./js/**/*.js'], ['jshint', 'reload']);
-  gulp.watch(['./sass/**/*.scss'], ['sass', 'reload']);
+  gulp.watch(['./js/**/*.js'], function () {
+    runSequence('jshint', 'reload');
+  });
+  gulp.watch(['./sass/**/*.scss'], function () {
+    runSequence('sass', 'reload');
+  });
 });
- 
+
 // For development
-gulp.task('default', ['jshint', 'sass', 'copy', 'connect', 'watch']);
+gulp.task('default', function () {
+  runSequence('copy', ['jshint', 'sass'], 'connect', 'watch');
+});
 
 // When ready to deploy
-gulp.task('package', ['jshint', 'sass', 'minify-css', 'minify-js', 'copy'])
+gulp.task('package', function () {
+  runSequence('copy', ['jshint', 'sass'], ['minify-css', 'minify-js']);
+});

@@ -334,14 +334,14 @@ header {
 
 .service-content {
   position: absolute;
-  top: 0;
+  top: 30px;
   left: 0;
+  padding: 20px;
   z-index: 1;
   opacity: 0;
   width: 100%;
-  height: 220px;
-  padding: 20%;
-  text-align: center;
+  height: 100%;
+  margin: 0 auto;
   transition: all .5s ease;
   background-color: #fff;
   backface-visibility: hidden;
@@ -380,10 +380,6 @@ header {
   margin-bottom: 10px;
   text-transform: uppercase; }
 
-.service-box .service-content p {
-  font-size: 1em;
-  margin: 0; }
-
 .service-box:hover .service-icon {
   opacity: 0;
   -webkit-transform: translateY(-110px) rotateX(90deg);
@@ -411,6 +407,18 @@ header {
 
 .service-marketing {
   background-color: #474747; }
+
+#contact .btn-gradient {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+  #contact .btn-gradient:after {
+    height: 50px;
+    width: 200%;
+    transform: translateX(-40%); }
+  #contact .btn-gradient:hover:after {
+    transform: translateX(-60%); }
 
 #contact .contact-form {
   border: 2px solid #222;
@@ -526,8 +534,8 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: white;
-  font-size: 14px;
+  color: #fff;
+  font-size: 0.707em;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
