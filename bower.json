@@ -3,7 +3,8 @@
   "description": "Website for Array Design",
   "main": "index.html",
   "authors": [
-    "Ben Inada <me@beninada.com> Lauren Wong <laurenwong12@gmail.com>"
+    "Ben Inada <me@beninada.com>",
+    "Lauren Wong <laurenwong12@gmail.com>"
   ],
   "license": "MIT",
   "homepage": "http://arraydesign.co",

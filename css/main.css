@@ -558,6 +558,9 @@ header {
   #contact .btn-gradient:hover:after {
     transform: translateX(-60%); }
 
+#contact .section-cta {
+  margin-top: 50px; }
+
 #contact .contact-form {
   border: 2px solid #222;
   padding: 50px; }
@@ -584,7 +587,7 @@ header {
   outline: none; }
 
 #contact label {
-  color: #222;
+  color: #6f6f6f;
   font-size: 18px;
   font-weight: normal;
   position: absolute;
@@ -631,7 +634,7 @@ header {
 #contact .highlight {
   position: absolute;
   height: 60%;
-  width: 33%;
+  width: 75%;
   top: 25%;
   left: 0;
   pointer-events: none;
@@ -644,21 +647,21 @@ header {
 
 @-webkit-keyframes inputHighlighter {
   from {
-    background: #222; }
+    background: #3bade3; }
   to {
     width: 0;
     background: transparent; } }
 
 @-moz-keyframes inputHighlighter {
   from {
-    background: #222; }
+    background: #3bade3; }
   to {
     width: 0;
     background: transparent; } }
 
 @keyframes inputHighlighter {
   from {
-    background: #222; }
+    background: #9844b7 51%; }
   to {
     width: 0;
     background: transparent; } }

@@ -18,6 +18,10 @@
     }
   }
 
+  .section-cta {
+    margin-top: 50px;
+  }
+
   .contact-form {
     border: 2px solid $black;
     padding: 50px;
@@ -50,7 +54,7 @@
   }
 
   label {
-    color: $black; 
+    color: lighten($black, 30%); 
     font-size: 18px;
     font-weight: normal;
     position: absolute;
@@ -104,7 +108,7 @@
   .highlight {
     position: absolute;
     height: 60%; 
-    width: 33%; 
+    width: 75%; 
     top: 25%; 
     left: 0;
     pointer-events: none;
@@ -119,7 +123,7 @@
 
   @-webkit-keyframes inputHighlighter {
     from {
-      background: $black;
+      background: rgba(59,173,227,1);
     }
     to  {
       width: 0;
@@ -129,7 +133,7 @@
 
   @-moz-keyframes inputHighlighter {
     from {
-      background: $black;
+      background: rgba(59,173,227,1);
     }
     to {
       width: 0;
@@ -139,7 +143,7 @@
 
   @keyframes inputHighlighter {
     from {
-      background: $black;
+      background: rgba(152,68,183,1) 51%;
     }
     to {
       width: 0;
