@@ -412,8 +412,100 @@ header {
 .service-marketing {
   background-color: #474747; }
 
-#contact .email {
-  color: #fff; }
+#contact {
+  /* form starting stylings ------------------------------- */
+  /* LABEL ======================================= */
+  /* active state */
+  /* BOTTOM BARS ================================= */
+  /* active state */
+  /* HIGHLIGHTER ================================== */
+  /* active state */
+  /* ANIMATIONS ================ */ }
+  #contact .email {
+    color: #fff; }
+  #contact .group {
+    position: relative;
+    margin-bottom: 25px; }
+  #contact input {
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575; }
+  #contact input:focus {
+    outline: none; }
+  #contact label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all; }
+  #contact input:focus ~ label,
+  #contact input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE; }
+  #contact .bar {
+    position: relative;
+    display: block;
+    width: 300px; }
+  #contact .bar:before,
+  #contact .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all; }
+  #contact .bar:before {
+    left: 50%; }
+  #contact .bar:after {
+    right: 50%; }
+  #contact input:focus ~ .bar:before,
+  #contact input:focus ~ .bar:after {
+    width: 50%; }
+  #contact .highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5; }
+  #contact input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease; }
+
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
+
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
 
 .btn-default {
   color: #222;

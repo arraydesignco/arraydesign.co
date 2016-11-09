@@ -64,6 +64,7 @@
     // Initialize parallax
     $('#header').parallax({imageSrc: '../img/dream-show.jpg'});
     $('#hook').parallax({imageSrc: '../img/growth.jpg'});
+    $('#contact').parallax({imageSrc: '../img/growth.jpg'});
 })(jQuery); // End of use strict
 
 $(function() {
