@@ -14,7 +14,7 @@ var fs = require('fs');
 var pkg = require('./package.json');
 
 // Minify compiled CSS
-gulp.task('minify-css', function() {
+gulp.task('minify-css', function () {
   return gulp.src('css/creative.css')
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(rename({ suffix: '.min' }))
@@ -22,7 +22,7 @@ gulp.task('minify-css', function() {
 });
 
 // Minify JS
-gulp.task('minify-js', function() {
+gulp.task('minify-js', function () {
   return gulp.src('js/creative.js')
     .pipe(uglify())
     .pipe(header(banner, { pkg: pkg }))
@@ -36,14 +36,14 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('jshint', function() {
+gulp.task('jshint', function () {
   return gulp.src('js/**/*.js')
     .pipe(jshint())
     .pipe(jshint.reporter('jshint-stylish'));
 });
 
 // Copy vendor libraries from /node_modules into /vendor
-gulp.task('copy', function() {
+gulp.task('copy', function () {
   gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
     .pipe(gulp.dest('vendor/bootstrap'));
 
@@ -73,7 +73,7 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('sass/vendor/bourbon'));
 })
 
-gulp.task('connect', function() {
+gulp.task('connect', function () {
   connect.server({
     root: '.',
     livereload: true

@@ -118,18 +118,23 @@ aside {
   background: $black;
 }
 
-img::selection {
-  color: $white;
-  background: transparent;
-}
+img {
+  max-width: 100%;
+  height: auto;
 
-img::-moz-selection {
-  color: $white;
-  background: transparent;
-}
+  &::selection {
+    color: $white;
+    background: transparent;
+  }
 
-img.profile {
-  padding: 10px;
+  &::-moz-selection {
+    color: $white;
+    background: transparent;
+  }
+
+  &.profile {
+    padding: 10px;
+  }
 }
 
 ul {

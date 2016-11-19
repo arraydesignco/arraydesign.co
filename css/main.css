@@ -95,16 +95,17 @@ aside {
   text-shadow: none;
   background: #222; }
 
-img::selection {
-  color: #fff;
-  background: transparent; }
-
-img::-moz-selection {
-  color: #fff;
-  background: transparent; }
-
-img.profile {
-  padding: 10px; }
+img {
+  max-width: 100%;
+  height: auto; }
+  img::selection {
+    color: #fff;
+    background: transparent; }
+  img::-moz-selection {
+    color: #fff;
+    background: transparent; }
+  img.profile {
+    padding: 10px; }
 
 ul {
   list-style-type: none; }
