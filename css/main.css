@@ -35,7 +35,8 @@ h3 {
   font-size: 1.999em; }
 
 h4 {
-  font-size: 1.414em; }
+  font-size: 1.414em;
+  font-weight: 300; }
 
 small,
 .font-small {
@@ -377,12 +378,11 @@ header {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center; }
 
-.home-heading {
+.home-header {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
-.home-heading-desc {
-  font-weight: 400;
+.home-header-desc {
   margin-top: .5em;
   margin-bottom: 2em; }
 
