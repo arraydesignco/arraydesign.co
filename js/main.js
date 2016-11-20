@@ -62,9 +62,9 @@
     });
 
     // Initialize parallax
-    $('#header').parallax({imageSrc: '../assets/img/dream-show.jpg'});
-    $('#hook').parallax({imageSrc: '../assets/img/growth.jpg'});
-    $('#contact').parallax({imageSrc: '../assets/img/phone.jpg'});
+    $('#header').parallax({imageSrc: 'assets/img/dream-show.jpg'});
+    $('#hook').parallax({imageSrc: 'assets/img/growth.jpg'});
+    $('#contact').parallax({imageSrc: 'assets/img/phone.jpg'});
 })(jQuery); // End of use strict
 
 $(function() {
