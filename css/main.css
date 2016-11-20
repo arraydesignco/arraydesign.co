@@ -6,7 +6,7 @@ body {
   webkit-tap-highlight-color: #222; }
 
 body {
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   line-height: 1.45;
   color: #222; }
@@ -22,7 +22,7 @@ h4 {
   margin: 0 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1 {
   margin-top: 0;
@@ -239,7 +239,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: #fff; }
 
 .btn {
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: none;
   border-radius: 3px;
   font-weight: 700;
@@ -251,14 +251,14 @@ fieldset[disabled] .btn-primary.active {
 .navbar-default {
   background-color: #fff;
   border-color: transparent;
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s; }
 
 .navbar-default .navbar-header .navbar-brand {
   color: #fff;
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase; }
 
@@ -374,11 +374,11 @@ header {
 .section-heading {
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center; }
 
 .home-heading {
-  font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
 .home-heading-desc {
