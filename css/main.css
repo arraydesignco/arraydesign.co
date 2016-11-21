@@ -111,6 +111,10 @@ img {
 ul {
   list-style-type: none; }
 
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none; }
+
 .btn-gradient {
   display: block;
   height: 50px;
@@ -443,6 +447,22 @@ header {
   padding-bottom: 0; }
   #intro .artist > .how {
     margin-top: 150px; }
+  #intro .full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  #intro .carousel-img {
+    height: 100%;
+    background-repeat: no-repeat; }
+  #intro .adele-img {
+    background-image: url("../img/adele.png"); }
+  #intro .bieber-img {
+    background-image: url("../img/biebs.jpg"); }
+  #intro .skrillex-img {
+    background-image: url("../img/skrillex.png"); }
+  #intro h2 {
+    margin-top: 25%;
+    font-weight: 100; }
 
 #hook {
   padding-top: 300px;

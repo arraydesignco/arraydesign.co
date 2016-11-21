@@ -5,4 +5,32 @@
   .artist > .how {
     margin-top: 150px;
   }
+
+  .full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .carousel-img {
+    height: 100%;
+    background-repeat: no-repeat
+  }
+
+  .adele-img {
+    background-image: url("../img/adele.png");
+  }
+
+  .bieber-img {
+    background-image: url("../img/biebs.jpg");
+  }
+
+  .skrillex-img {
+    background-image: url("../img/skrillex.png");
+  }
+
+  h2 {
+    margin-top: 25%;
+    font-weight: $font-weight-thin
+  }
 }
