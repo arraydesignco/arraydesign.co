@@ -59,12 +59,12 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('assets/parallax.js'));
 
   gulp.src([
-      'node_modules/font-awesome/**',
-      '!node_modules/font-awesome/**/*.map',
-      '!node_modules/font-awesome/.npmignore',
-      '!node_modules/font-awesome/*.txt',
-      '!node_modules/font-awesome/*.md',
-      '!node_modules/font-awesome/*.json'
+    'node_modules/font-awesome/**',
+    '!node_modules/font-awesome/**/*.map',
+    '!node_modules/font-awesome/.npmignore',
+    '!node_modules/font-awesome/*.txt',
+    '!node_modules/font-awesome/*.md',
+    '!node_modules/font-awesome/*.json'
   ])
     .pipe(gulp.dest('assets/font-awesome'));
 
@@ -87,10 +87,10 @@ gulp.task('reload', function () {
 gulp.task('watch', function () {
   gulp.watch(['./*.html', './img/*', './fonts/*'], ['reload']);
   gulp.watch(['./js/**/*.js'], function () {
-    runSequence('jshint', 'reload');
+    runSequence('jshint', 'minify-js', 'reload');
   });
   gulp.watch(['./sass/**/*.scss'], function () {
-    runSequence('sass', 'reload');
+    runSequence('sass', 'minify-css', 'reload');
   });
 });
 
