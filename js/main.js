@@ -45,22 +45,6 @@
         distance: '0px'
     }, 300);
 
-    // Initialize and Configure Magnific Popup Lightbox Plugin
-    $('.popup-gallery').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        tLoading: 'Loading image #%curr%...',
-        mainClass: 'mfp-img-mobile',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
-        },
-        image: {
-            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-        }
-    });
-
     // Initialize parallax
     $('#header').parallax({imageSrc: 'img/dream-show.jpg'});
     $('#hook').parallax({imageSrc: 'img/growth.jpg'});
@@ -68,7 +52,7 @@
 
     // Initialize carousel
     var $item = $('.carousel .item'); 
-    var $wHeight = $(window).height() * .75;
+    var $wHeight = $(window).height() * 0.75;
 
     $item.eq(0).addClass('active');
     $item.height($wHeight); 
@@ -85,7 +69,7 @@
     });
 
     $(window).on('resize', function (){
-      $wHeight = $(window).height() *.75;
+      $wHeight = $(window).height() * 0.75;
       $item.height($wHeight);
     });
 
