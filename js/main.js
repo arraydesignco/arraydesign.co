@@ -1,5 +1,5 @@
 (function($) {
-    "use strict"; // Start of use strict
+    'use strict'; // Start of use strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
@@ -47,33 +47,7 @@
 
     // Initialize parallax
     $('#header').parallax({imageSrc: 'img/dream-show.jpg'});
-    $('#hook').parallax({imageSrc: 'img/growth.jpg'});
     $('#contact').parallax({imageSrc: 'img/phone.jpg'});
-
-    // Initialize carousel
-    var $item = $('.carousel .item'); 
-    var $wHeight = $(window).height() * 0.75;
-
-    $item.eq(0).addClass('active');
-    $item.height($wHeight); 
-    $item.addClass('full-screen');
-
-    $('.carousel img').each(function() {
-      var $src = $(this).attr('src');
-      var $color = $(this).attr('data-color');
-      $(this).parent().css({
-        'background-image' : 'url(' + $src + ')',
-        'background-color' : $color
-      });
-      $(this).remove();
-    });
-
-    $(window).on('resize', function (){
-      $wHeight = $(window).height() * 0.75;
-      $item.height($wHeight);
-    });
-
-    $('.carousel').carousel();
 
     // Initialize scrolldown
     $(function() {
