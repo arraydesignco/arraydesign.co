@@ -52,7 +52,7 @@ gulp.task('copy', function () {
   gulp.src(['bower_components/bourbon/**'])
     .pipe(gulp.dest('sass/assets/bourbon'));
 
-  gulp.src(['bower_components/bootstrap-sass/**', '!bower_components/bootstrap-sass/_bootstrap.scss'])
+  gulp.src(['bower_components/bootstrap-sass/**', '!bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss'])
     .pipe(gulp.dest('sass/assets/bootstrap-sass'));
 })
 
