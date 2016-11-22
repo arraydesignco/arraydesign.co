@@ -2,7 +2,7 @@
 ###################
 bower_components/*
 node_modules/*
-sass/vendor/*
+sass/assets/*
 
 # Compiled source #
 ###################

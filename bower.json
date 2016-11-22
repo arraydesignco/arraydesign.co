@@ -3,8 +3,7 @@
   "description": "Website for Array Design",
   "main": "index.html",
   "authors": [
-    "Ben Inada <me@beninada.com>",
-    "Lauren Wong <laurenwong12@gmail.com>"
+    "Array Design <hello@arraydesign.co>"
   ],
   "license": "MIT",
   "homepage": "http://arraydesign.co",
@@ -18,9 +17,7 @@
   ],
   "dependencies": {
     "parallax.js": "^1.4.2",
-    "bourbon": "^4.2.7"
-  },
-  "devDependencies": {
+    "bourbon": "^4.2.7",
     "bootstrap-sass": "^3.3.7"
   }
 }

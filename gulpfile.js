@@ -30,9 +30,9 @@ gulp.task('minify-js', function () {
 });
 
 gulp.task('sass', function () {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src('sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('css'));
 });
 
 gulp.task('jshint', function () {
@@ -43,33 +43,17 @@ gulp.task('jshint', function () {
 
 // Copy assets into the right areas
 gulp.task('copy', function () {
-  gulp.src(['node_modules/bootstrap/dist/**/*', '!**/npm.js', '!**/bootstrap-theme.*', '!**/*.map'])
-    .pipe(gulp.dest('assets/bootstrap'));
-
-  gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-    .pipe(gulp.dest('assets/jquery'));
-
-  gulp.src(['node_modules/magnific-popup/dist/*'])
-    .pipe(gulp.dest('assets/magnific-popup'));
-
-  gulp.src(['node_modules/scrollreveal/dist/*.js'])
+  gulp.src(['node_modules/scrollreveal/**'])
     .pipe(gulp.dest('assets/scrollreveal'));
 
-  gulp.src(['bower_components/parallax.js/*.js'])
+  gulp.src(['bower_components/parallax.js/**'])
     .pipe(gulp.dest('assets/parallax.js'));
 
-  gulp.src([
-    'node_modules/font-awesome/**',
-    '!node_modules/font-awesome/**/*.map',
-    '!node_modules/font-awesome/.npmignore',
-    '!node_modules/font-awesome/*.txt',
-    '!node_modules/font-awesome/*.md',
-    '!node_modules/font-awesome/*.json'
-  ])
-    .pipe(gulp.dest('assets/font-awesome'));
-
-  gulp.src(['assets/bourbon/**'])
+  gulp.src(['bower_components/bourbon/**'])
     .pipe(gulp.dest('sass/assets/bourbon'));
+
+  gulp.src(['bower_components/bootstrap-sass/**', '!bower_components/bootstrap-sass/_bootstrap.scss'])
+    .pipe(gulp.dest('sass/assets/bootstrap-sass'));
 })
 
 gulp.task('connect', function () {
@@ -85,11 +69,11 @@ gulp.task('reload', function () {
 });
  
 gulp.task('watch', function () {
-  gulp.watch(['./*.html', './img/*', './fonts/*'], ['reload']);
-  gulp.watch(['./js/**/*.js'], function () {
+  gulp.watch(['*.html', 'img/*'], ['reload']);
+  gulp.watch(['js/**/*.js'], function () {
     runSequence('jshint', 'minify-js', 'reload');
   });
-  gulp.watch(['./sass/**/*.scss'], function () {
+  gulp.watch(['sass/**/*.scss'], function () {
     runSequence('sass', 'minify-css', 'reload');
   });
 });

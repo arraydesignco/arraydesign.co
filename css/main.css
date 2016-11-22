@@ -6259,12 +6259,6 @@ header {
     -ms-transform: translateY(-5px);
     transform: translateY(-5px); } }
 
-#hook {
-  padding-top: 300px;
-  padding-bottom: 300px;
-  background: transparent;
-  color: #fff; }
-
 @media (min-width: 992px) {
   .service-box {
     margin: 20px auto 0; } }
