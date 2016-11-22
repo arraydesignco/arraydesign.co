@@ -4714,12 +4714,33 @@ fieldset[disabled] .btn-primary.active {
   padding: 15px 30px; }
 
 .navbar-default {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
   border-color: transparent;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s; }
+
+.navbar-default .navbar-toggle {
+  border: 0; }
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: inherit; }
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  background-color: inherit; }
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: 0; }
+
+.navbar-default .nav > li > a, .navbar-default .nav > li > a:focus {
+  color: #fff !important; }
+
+button.navbar-toggle i {
+  color: #fff; }
 
 .navbar-default .navbar-header .navbar-brand {
   color: #fff;
@@ -4733,7 +4754,7 @@ fieldset[disabled] .btn-primary.active {
 
 .navbar-default .navbar-header .navbar-toggle {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.707em;
   color: #222;
   text-transform: uppercase; }
 
@@ -4741,7 +4762,7 @@ fieldset[disabled] .btn-primary.active {
 .navbar-default .nav > li > a:focus {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 0.707em;
   color: #222; }
 
 .navbar-default .nav > li > a:hover,
@@ -4774,7 +4795,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: transparent; }
   .navbar-default.affix .navbar-header .navbar-brand {
     color: #222;
-    font-size: 14px; }
+    font-size: 1em; }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
     color: #222; }
