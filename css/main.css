@@ -4579,6 +4579,8 @@ ul {
   display: block;
   height: 50px;
   width: 186px;
+  border: 0;
+  background-color: transparent;
   position: relative;
   overflow: hidden;
   text-decoration: none;
@@ -4592,6 +4594,7 @@ ul {
   margin: 0 auto; }
   .btn-gradient:after {
     position: absolute;
+    top: 0;
     content: '';
     display: inline-block;
     background: #3bade3;
@@ -5032,6 +5035,9 @@ header {
     transform: translateX(-40%); }
   #contact .btn-gradient:hover:after {
     transform: translateX(-60%); }
+  #contact .btn-gradient span {
+    position: relative;
+    top: 0; }
 
 #contact .section-cta {
   margin-top: 50px; }
