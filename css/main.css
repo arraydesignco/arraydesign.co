@@ -5141,9 +5141,6 @@ header {
     width: 0;
     background: transparent; } }
 
-footer {
-  height: 300px; }
-
 .footer-distributed {
   background-color: #222;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -5248,6 +5245,8 @@ footer {
   margin-bottom: 5px; }
 
 @media (max-width: 880px) {
+  footer {
+    height: 600px; }
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
   .footer-distributed .footer-right {
