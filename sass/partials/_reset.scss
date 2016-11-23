@@ -87,7 +87,7 @@ a:focus {
 }
 
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 aside {
@@ -149,7 +149,8 @@ ul {
 }
 
 .section-elaboration {
-  margin-top: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-size: $font-size-base;
 }
 
@@ -160,5 +161,9 @@ ul {
 
   .section-elaboration {
     font-size: $font-size-h4;
+  }
+
+  section {
+    padding: 100px 0;
   }
 }

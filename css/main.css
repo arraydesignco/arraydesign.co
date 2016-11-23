@@ -4531,7 +4531,7 @@ a:focus {
   color: rgba(255, 255, 255, 0.7); }
 
 section {
-  padding: 100px 0; }
+  padding: 50px 0; }
 
 aside {
   padding: 50px 0; }
@@ -4577,14 +4577,17 @@ ul {
   font-size: 1.999em; }
 
 .section-elaboration {
-  margin-top: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-size: 1em; }
 
 @media (min-width: 768px) {
   .section-heading {
     font-size: 2.827em; }
   .section-elaboration {
-    font-size: 1.414em; } }
+    font-size: 1.414em; }
+  section {
+    padding: 100px 0; } }
 
 .btn-gradient {
   display: block;
@@ -4914,9 +4917,6 @@ header {
       margin-right: auto; }
   .scroll-down {
     bottom: 2%; } }
-
-#services .section-heading {
-  font-size: 1.999em; }
 
 @media (min-width: 992px) {
   .service-box {
