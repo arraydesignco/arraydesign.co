@@ -1,13 +1,21 @@
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
+  min-height: 100%;
   background: transparent;
   text-align: center;
   color: $white;
 
   .header-content {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px;
+  }
+
+  .header-content {
     text-align: center;
     padding: 100px 15px 100px;
     width: 100%;
@@ -32,38 +40,6 @@ header {
   }
 }
 
-@media (min-width: 768px) {
-  header {
-    min-height: 100%;
-
-    .header-content {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      padding: 0 50px;
-    }
-
-    .header-content .header-content-inner {
-      max-width: 1160px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .header-content .header-content-inner h1 {
-      font-size: 50px;
-    }
-
-    .header-content .header-content-inner p {
-      font-size: 18px;
-      max-width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
-}
-
 .intro {
   text-transform: uppercase;
   font-weight: bold;
@@ -79,7 +55,7 @@ header {
 .home-header {
   font-family: $sans-serif;
   font-weight: $font-weight-black;
-  font-size: $font-size-banner !important;
+  font-size: $font-size-h2 !important;
 }
 
 .home-header-desc {
@@ -96,7 +72,7 @@ header {
 .scroll-down {
   position: absolute;
   left: 50%;
-  top: 95%;
+  bottom: 2%;
   margin-left: -16px;
   display: block;
   width: 32px;
@@ -112,16 +88,16 @@ header {
 }
 
 .scroll-down:before {
-    position: absolute;
-    top: calc(50% - 8px);
-    left: calc(50% - 6px);
-    transform: rotate(-45deg);
-    display: block;
-    width: 12px;
-    height: 12px;
-    content: "";
-    border: 3px solid white;
-    border-width: 0px 0 3px 3px;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 6px);
+  transform: rotate(-45deg);
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: "";
+  border: 3px solid white;
+  border-width: 0px 0 3px 3px;
 }
 
 @keyframes bounce {
@@ -143,5 +119,36 @@ header {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    min-height: 100%;
+
+    .home-header {
+      font-family: $sans-serif;
+      font-weight: $font-weight-black;
+      font-size: $font-size-banner !important;
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 0 50px;
+    }
+
+    .header-content .header-content-inner {
+      max-width: 1160px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .scroll-down {
+    bottom: 2%;
   }
 }

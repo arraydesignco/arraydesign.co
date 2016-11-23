@@ -98,10 +98,6 @@ aside {
   padding: 0;
 }
 
-.section-heading {
-  margin-top: 0;
-}
-
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
@@ -145,4 +141,24 @@ ul {
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;
+}
+
+.section-heading {
+  margin-top: 0;
+  font-size: $font-size-h3;
+}
+
+.section-elaboration {
+  margin-top: 0;
+  font-size: $font-size-base;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: $font-size-h2;
+  }
+
+  .section-elaboration {
+    font-size: $font-size-h4;
+  }
 }

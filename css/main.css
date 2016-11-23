@@ -4539,9 +4539,6 @@ aside {
 .no-padding {
   padding: 0; }
 
-.section-heading {
-  margin-top: 0; }
-
 .no-gutter > [class*='col-'] {
   padding-right: 0;
   padding-left: 0; }
@@ -4574,6 +4571,20 @@ ul {
 .carousel-control.left,
 .carousel-control.right {
   background-image: none; }
+
+.section-heading {
+  margin-top: 0;
+  font-size: 1.999em; }
+
+.section-elaboration {
+  margin-top: 0;
+  font-size: 1em; }
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 2.827em; }
+  .section-elaboration {
+    font-size: 1.414em; } }
 
 .btn-gradient {
   display: block;
@@ -4784,12 +4795,18 @@ fieldset[disabled] .btn-primary.active {
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
+  min-height: 100%;
   background: transparent;
   text-align: center;
   color: #fff; }
   header .header-content {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 50px; }
+  header .header-content {
     text-align: center;
     padding: 100px 15px 100px;
     width: 100%; }
@@ -4806,28 +4823,6 @@ header {
     font-size: 50px;
     margin-bottom: 50px; }
 
-@media (min-width: 768px) {
-  header {
-    min-height: 100%; }
-    header .header-content {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      padding: 0 50px; }
-    header .header-content .header-content-inner {
-      max-width: 1160px;
-      margin-left: auto;
-      margin-right: auto; }
-    header .header-content .header-content-inner h1 {
-      font-size: 50px; }
-    header .header-content .header-content-inner p {
-      font-size: 18px;
-      max-width: 80%;
-      margin-left: auto;
-      margin-right: auto; } }
-
 .intro {
   text-transform: uppercase;
   font-weight: bold; }
@@ -4841,7 +4836,7 @@ header {
 .home-header {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
-  font-size: 5.653em !important; }
+  font-size: 2.827em !important; }
 
 .home-header-desc {
   margin-top: .5em;
@@ -4855,7 +4850,7 @@ header {
 .scroll-down {
   position: absolute;
   left: 50%;
-  top: 95%;
+  bottom: 2%;
   margin-left: -16px;
   display: block;
   width: 32px;
@@ -4898,6 +4893,30 @@ header {
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px); } }
+
+@media (min-width: 1200px) {
+  header {
+    min-height: 100%; }
+    header .home-header {
+      font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: 900;
+      font-size: 5.653em !important; }
+    header .header-content {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      padding: 0 50px; }
+    header .header-content .header-content-inner {
+      max-width: 1160px;
+      margin-left: auto;
+      margin-right: auto; }
+  .scroll-down {
+    bottom: 2%; } }
+
+#services .section-heading {
+  font-size: 1.999em; }
 
 @media (min-width: 992px) {
   .service-box {
@@ -4995,6 +5014,9 @@ header {
 
 .service-marketing {
   background-color: #474747; }
+
+#contact .section-heading {
+  text-align: left; }
 
 #contact .btn-gradient {
   height: 50px;

@@ -1,3 +1,9 @@
+#services {
+  .section-heading {
+    font-size: $font-size-h3;
+  }
+}
+
 @media (min-width: 992px) {
   .service-box {
     margin: 20px auto 0;
