@@ -4,6 +4,7 @@
   }
   
   .btn-gradient {
+    z-index: 0;
     height: 50px;
     width: 100%;
     text-align: center;
@@ -22,6 +23,7 @@
     }
 
     span {
+      z-index: 1;
       position: relative;
       top: 0;
     }
@@ -32,8 +34,7 @@
   }
 
   .contact-form {
-    border: 2px solid $black;
-    padding: 50px;
+    padding: 10px;
   }
 
   h2 {
@@ -64,7 +65,7 @@
 
   label {
     color: lighten($black, 30%); 
-    font-size: 18px;
+    font-size: $font-size-base;
     font-weight: normal;
     position: absolute;
     pointer-events: none;
@@ -158,5 +159,12 @@
       width: 0;
       background: transparent;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    border: 2px solid $black;
+    padding: 50px !important;
   }
 }

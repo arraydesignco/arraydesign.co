@@ -5019,6 +5019,7 @@ header {
   text-align: left; }
 
 #contact .btn-gradient {
+  z-index: 0;
   height: 50px;
   width: 100%;
   text-align: center;
@@ -5030,6 +5031,7 @@ header {
   #contact .btn-gradient:hover:after {
     transform: translateX(-60%); }
   #contact .btn-gradient span {
+    z-index: 1;
     position: relative;
     top: 0; }
 
@@ -5037,8 +5039,7 @@ header {
   margin-top: 50px; }
 
 #contact .contact-form {
-  border: 2px solid #222;
-  padding: 50px; }
+  padding: 10px; }
 
 #contact h2 {
   text-align: left; }
@@ -5063,7 +5064,7 @@ header {
 
 #contact label {
   color: #6f6f6f;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: normal;
   position: absolute;
   pointer-events: none;
@@ -5140,6 +5141,11 @@ header {
   to {
     width: 0;
     background: transparent; } }
+
+@media (min-width: 768px) {
+  .contact-form {
+    border: 2px solid #222;
+    padding: 50px !important; } }
 
 .footer-distributed {
   background-color: #222;
